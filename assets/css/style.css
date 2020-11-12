@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Thasadith&display=swap');
+body {
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+}
+/* navbar */
+#logo {
+font-size:3rem;
+padding-right:15px;
+margin: auto;
+font-family: 'Julius Sans One', sans-serif;
+color: #FFA500;
+}
+/* linkone */
+.nav-link{
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*
+*Ces styles créent le soulignement du lien*/
+.nav-link{
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+.nav-link::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #fbb459 25%, rgba(0, 0, 0, 0) 40%);
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+  will-change: width;
+  transform: rotate(-2deg);
+  transform-origin: left bottom
+}
+.nav-link:hover::before{
+  width: 0;
+}
+/*
+* animation styles*/
+.link::before{
+  transition: width .1s ease-out;
+}
+.link:hover::before{
+  transition-duration: .15s;
+}
+.nav-link{
+  color: #48474a;
+}
+.nav-link:hover{
+  color: #242222
+}
+.navbar-brand {
+  font-size:2rem;
+  padding-right:15px;
+  font-family: 'Julius Sans One', sans-serif;
+  color: #FFA500;
+}
+.navbar-brand:hover{
+  color: #FFA500;
+}
+/* FIN DE LA NAVBAR */
+#bann {
+  width: 100%;
+  height: 250px;
+  background-image: url('https://amiens-ocordo-travaux.fr/wp-content/uploads/revslider/acc2/Societe-de-renovation-%C3%A0-Lille.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+#bann_presentation {
+  background-color: #fca301bd;
+  height: 200px;
+  font-weight: bold;
+  font-family: 'Julius Sans One', sans-serif;
+color: white;
+font-size: 2rem;
+}
+#button_dev {
+  position: absolute;
+  right: 75px;
+  bottom: 45px;
+  background-color: #549f5c;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Thasadith', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blok {
+width: 90%;
+margin: auto;
+background: #f4f2f2;
+text-align: center;
+margin-top: 20px;
+border: 1px solid #c4c4c4;
+font-family: 'Thasadith', sans-serif;
+font-size: 1.2rem;
+}
+h1 {
+background-color: #343a40;
+text-align: center;
+color: #FFA500;
+font-weight: bold;
+}
+.gallery_box_single{
+  margin: 0;
+  justify-content: space-around;
+}
+.img {
+display: inline-block;
+margin-right: 15px;
+border: 1px solid #d5d5d5;
+padding: 1%;
+max-width: auto;
+height: auto;}
+
+.img img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border: 1px solid  #d5d5d5;
+}
+html footer {
+background-color: #343a40;
+color: white;
+padding: 10px;
+}
+.footerInformation{
+  padding-bottom: 3%;
+}
+.align {
+  text-align: center!important;
+}
+a:hover {
+  text-decoration: none;
+}
+.quote h2{
+  font-weight: bold;
+}
+
+.blok_legend {
+  padding-top: 10px;
+  background-color: #e7e7e7;
+}
+.legend {
+  font-size: 1.6rem;
+margin-top: 10px;
+}
+
+/*page 2*/
+ul{
+  text-align: left;
+  margin-left: 30%;
+}
+/*page 3*/
+.blok .quote p:nth-child(3){
+  color: #FFA500;
+}
+/*page 4*/
+form{
+  width: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  #bann {display: none;}
+}
+@media screen and (max-width: 900px) {
+  .blok_legend {display: none;}
+  footer {margin-top: 15px;}
+}
+
+footer h3{
+  color: #FFA500;
+}
+
+.footerInformation{
+  margin: 0;
+  color: #48474a;
+  background: #f7f7f7
+}
+.horizontaleRuleFooter{
+  padding: 0;
+  margin: 0;
+  border-top: medium double #fff;
+  color: #fff;
+}
